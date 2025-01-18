@@ -1,0 +1,48 @@
+[2023-11-01 09:52:16] [INFO]:
+Spectator UUID: 0803327f-a218-482a-a55a-ef6f3912d88e
+Spectator Name: Otamarau
+Taken         : [TNT x 2, FLINT_AND_STEEL & UNSPECIFIC_META:{meta-type=UNSPECIFIC, Damage=3} x 1]
+Given         : []
+Target        : Haze_ee1
+[2023-11-01 10:03:49] [INFO]:
+Spectator UUID: 0803327f-a218-482a-a55a-ef6f3912d88e
+Spectator Name: Otamarau
+Taken         : [DIAMOND x 47, IRON_INGOT x 15, PLAYER_HEAD & SKULL_META:{meta-type=SKULL, lore=[{"extra":[{"insertion":"Haze_ee1","clickEvent":{"action":"suggest_command","value":"/tell Haze_ee1 "},"hoverEvent":{"action":"show_entity","contents":{"type":"minecraft:player","id":"e4a232d8-1a6e-4fbd-a352-870e327d9c66","name":{"text":"Haze_ee1"}}},"text":"Haze_ee1"}],"text":"§rKilled by §r§e"}], skull-owner=CraftPlayerProfile [uniqueId=0803327f-a218-482a-a55a-ef6f3912d88e, name=Otamarau, properties={textures=[{name=textures, value=ewogICJ0aW1lc3RhbXAiIDogMTY5ODg1NjgzMzA0OCwKICAicHJvZmlsZUlkIiA6ICIwODAzMzI3ZmEyMTg0ODJhYTU1YWVmNmYzOTEyZDg4ZSIsCiAgInByb2ZpbGVOYW1lIiA6ICJPdGFtYXJhdSIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9mMDQ3YTI0NDkwNGE5Y2Q2OWRhNzM3ZjQ0NGM4Njc2OThmNmI2ZTk2MTY2MDI0N2ZjMWU5ZTVmOTQ0ZDI3MzdmIiwKICAgICAgIm1ldGFkYXRhIiA6IHsKICAgICAgICAibW9kZWwiIDogInNsaW0iCiAgICAgIH0KICAgIH0sCiAgICAiQ0FQRSIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjlhNzY1Mzc2NDc5ODlmOWEwYjZkMDAxZTMyMGRhYzU5MWMzNTllOWU2MWEzMWY0Y2UxMWM4OGYyMDdmMGFkNCIKICAgIH0KICB9Cn0=, signature=a6egO88EDCw6iD5QoxMLHUuzd8OgieXhOS6iq0Xfp4T86z6xNMDbKzk6NI9Bj6Oa6XtXcxTpmFXjZebnYm70eJ3I7NguOGGU3Kb2qyDSIJc7pwKsNXsMFGH6qT3fXh+Szv0Fq/yvXkvOWJEf5Y3beAN6+nrsOk2OSf50nNPjkShCNhbUKYRqo4wnslE8WS33DgoKuFN2YHhynQ2yUgujFLGR01g+UhebZ/l2y75W6HI9R1BMGblnj8FLBnGPEotxplUG0i3twNzMDRr2kDxVVEagJiWvcx19Iw/tXEmFPTvt4Hl8l2V7CcvSkg+3tN/YjiN4UwCgqhZ2w6pViA+rgKzif5evQVtg1iSNiCWTEMgGaKW3/CwdwnGAu77VBC/scmAYT7/WLv8f8qpqbiZk7PQsTzLPnYAT/g7aub2d6Jc3CFe1kGN+3U2A0qKGovr+6f0+4uQ5IZQni7mDxpMus288AE1u1BrT/1iZiZE1beKKCY0pyzPIdn0wA12vnpf6Kadl2Hf5VyDT6bFldNZd9TFRNDrfY5+qzsmbBLSl8qLNOP3YDOVcwPA9OL4ZGN7hN/TMkd1WBldmVZnYdhOBvFLGsOgD+Vc3Qd+CyOCMS5B0Y5eiTCflgt65t9R+wJIZeNIQ5+xnXeUpnrlx7+iAudKnJtLKMKNElCZ0pI0C8a8=}]}]} x 2, DIAMOND_AXE & UNSPECIFIC_META:{meta-type=UNSPECIFIC, Damage=63} x 1, COOKED_COD x 6]
+Given         : []
+Target        : Haze_ee1
+[2023-11-01 10:24:07] [INFO]:
+Spectator UUID: e4a232d8-1a6e-4fbd-a352-870e327d9c66
+Spectator Name: Haze_ee1
+Taken         : [DIAMOND x 17]
+Given         : []
+Target        : Damos_P
+[2023-11-01 10:24:17] [INFO]:
+Spectator UUID: e4a232d8-1a6e-4fbd-a352-870e327d9c66
+Spectator Name: Haze_ee1
+Taken         : []
+Given         : [DIAMOND x 17]
+Target        : Damos_P
+[2023-11-01 10:24:17] [INFO]:
+Spectator UUID: e4a232d8-1a6e-4fbd-a352-870e327d9c66
+Spectator Name: Haze_ee1
+Taken         : []
+Given         : [DIAMOND x 17]
+Target        : Damos_P
+[2023-11-02 08:19:20] [INFO]:
+Spectator UUID: e4a232d8-1a6e-4fbd-a352-870e327d9c66
+Spectator Name: Haze_ee1
+Taken         : [IRON_HELMET & ARMOR_META:{meta-type=ARMOR, Damage=86} x 1]
+Given         : [COBBLESTONE x 32]
+Target        : Luqrixs
+[2023-11-02 08:20:45] [INFO]:
+Spectator UUID: e4a232d8-1a6e-4fbd-a352-870e327d9c66
+Spectator Name: Haze_ee1
+Taken         : []
+Given         : [GRANITE x 6, DIRT x 21, SPRUCE_PLANKS x 1, IRON_HELMET & ARMOR_META:{meta-type=ARMOR, Damage=86} x 1]
+Target        : Luqrixs
+[2023-11-02 08:24:33] [INFO]:
+Spectator UUID: f7c6cbdd-e90f-46eb-9d31-40cb2e535fb9
+Spectator Name: Luqrixs
+Taken         : []
+Given         : [COBBLESTONE x 32]
+Target        : Damos_P

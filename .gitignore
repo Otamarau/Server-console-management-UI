@@ -1,0 +1,7 @@
+
+certs/certificate.crt
+certs/private.key
+certs/ca_bundle.crt
+backups/backup-2023-11-11T18-15-52-039Z.zip
+*.zip
+*.h

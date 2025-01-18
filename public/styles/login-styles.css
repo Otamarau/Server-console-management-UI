@@ -1,0 +1,161 @@
+h3 {
+  color: white;
+  font-size: 16px;
+  font-family: "Roboto Mono", monospace;
+  margin-left: 5px;
+}
+h3 span {
+  text-decoration: underline;
+}
+
+h2 {
+  color: white;
+  font-size: 14px;
+  font-family: "Roboto Mono", monospace;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+h1 {
+  font-family: "Roboto Mono", monospace;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100vw;
+  height: 200vh;
+  background-color: white;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+body .material-symbols-outlined {
+  font-size: 50px;
+  color: black;
+  cursor: pointer;
+}
+body .material-symbols-outlined:hover {
+  color: darkgray;
+}
+body nav {
+  width: 100vw;
+  height: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: white;
+}
+body #terminal {
+  width: 95vw;
+  height: 90vh;
+  background-color: black;
+  border-radius: 15px;
+  border: solid darkgray;
+  overflow: hidden;
+}
+body #terminal nav {
+  background-color: #1f2021;
+  width: 100%;
+  height: 40px;
+  border-radius: 15px 15px 0px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body #terminal nav div {
+  width: 300px;
+  height: 40px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 5px;
+}
+body #terminal nav div div {
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Roboto Mono", monospace;
+  font-size: 30px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+body #terminal nav div div:hover {
+  background-color: #0d0d0d;
+}
+body #terminal nav div .close:hover {
+  background-color: red;
+}
+body #terminal nav .material-symbols-outlined {
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  margin-left: 5px;
+}
+body #terminal .message #cursor {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+body #terminal .message input {
+  border: none;
+  outline: none;
+  font-family: monospace;
+  font-size: 16px;
+  margin-left: -5px;
+  background-color: transparent;
+}
+body #blog {
+  margin-top: 100px;
+  width: 90vw;
+  height: 60vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+body #blog div {
+  width: 45%;
+  height: 100%;
+  border-radius: 15px;
+  background-color: #3A356E;
+}
+body #blog div nav {
+  background-color: #1f2021;
+  width: 100%;
+  height: 40px;
+  border-radius: 15px 15px 0px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body #blog div nav div {
+  background-color: #1f2021;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  margin-left: 5px;
+}
+
+.blink {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=login-styles.css.map */

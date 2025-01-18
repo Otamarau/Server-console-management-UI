@@ -1,0 +1,51 @@
+Starting org.bukkit.craftbukkit.Main
+System Info: Java 17 (OpenJDK 64-Bit Server VM 17+20-202105062340) Host: Linux 5.19.17-Unraid (amd64)
+Loading libraries, please wait...
+[09:15:17 INFO]: Environment: Environment[accountsHost=https://api.mojang.com, sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[33;1m[09:15:20 WARN]: Found loot table element validation problem in {loot_tables:minecraft:entities/bat}.pools[2].entries[0]: Unknown loot table called minecraft:entities/reference/extra/bat
+[m[33;1m[09:15:20 WARN]: Found loot table element validation problem in {loot_tables:minecraft:entities/shulker}.pools[2].entries[0]: Unknown loot table called minecraft:entities/reference/extra/shulker
+[m[33;1m[09:15:20 WARN]: Found loot table element validation problem in {loot_tables:minecraft:entities/ender_dragon}.pools[0].entries[0]: Unknown loot table called minecraft:entities/reference/extra/ender_dragon
+[m[09:15:20 INFO]: Loaded 7 recipes
+[09:15:21 INFO]: Starting minecraft server version 1.20.2
+[09:15:21 INFO]: Loading properties
+[09:15:21 INFO]: This server is running Paper version git-Paper-260 (MC: 1.20.2) (Implementing API version 1.20.2-R0.1-SNAPSHOT) (Git: 1865625)
+[09:15:22 INFO]: Server Ping Player Sample Count: 12
+[09:15:22 INFO]: Using 4 threads for Netty based IO
+[33;1m[09:15:22 WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
+    We recommend installing the spark profiler as a replacement: https://spark.lucko.me/
+    For more information please visit: https://github.com/PaperMC/Paper/issues/8948
+[m[09:15:22 INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 1 worker threads, and gen parallelism of 1 threads
+[09:15:23 INFO]: Default game type: SURVIVAL
+[09:15:23 INFO]: Generating keypair
+[?1h=[?2004h> [K[09:15:23 INFO]: Starting Minecraft server on *:25565
+> [K[09:15:23 INFO]: Using epoll channel type
+> [K[09:15:23 INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+> [K[09:15:23 INFO]: Paper: Using OpenSSL 3.0.x (Linux x86_64) cipher from Velocity.
+> [K[09:15:23 INFO]: [InvSee++] Loading server plugin InvSeePlusPlus v0.24.7
+> [K[09:15:23 INFO]: [TabTPS] Loading server plugin TabTPS v1.3.21
+> [K[09:15:23 INFO]: [ImageOnMap] Loading server plugin ImageOnMap v4.2.2
+> [K[09:15:23 INFO]: Server permissions file permissions.yml is empty, ignoring it
+> [K[09:15:23 INFO]: Preparing level "Aeron's victim group (World 1)"
+> [K[09:15:24 INFO]: Preparing start region for dimension minecraft:overworld
+> [K[09:15:25 INFO]: Time elapsed: 330 ms
+> [K[09:15:25 INFO]: Preparing start region for dimension minecraft:the_nether
+> [K[09:15:25 INFO]: Time elapsed: 91 ms
+> [K[09:15:25 INFO]: Preparing start region for dimension minecraft:the_end
+> [K[09:15:25 INFO]: Time elapsed: 39 ms
+> [K[09:15:25 INFO]: [InvSee++] Enabling InvSeePlusPlus v0.24.7
+> [K[09:15:25 INFO]: [TabTPS] Enabling TabTPS v1.3.21
+> [K[09:15:27 INFO]: [TabTPS] Successfully registered Mojang Brigadier support for commands.
+> [K[09:15:27 INFO]: [TabTPS] Successfully registered asynchronous command completion listener.
+> [K[09:15:28 INFO]: [ImageOnMap] Enabling ImageOnMap v4.2.2
+> [K[09:15:28 INFO]: [ImageOnMap] Loaded 1 player map files.
+> [K[09:15:29 INFO]: Starting remote control listener
+> [K[09:15:29 INFO]: Thread RCON Listener started
+> [K[09:15:29 INFO]: RCON running on 0.0.0.0:25575
+> [K[09:15:29 INFO]: Running delayed init tasks
+> [K[09:15:29 INFO]: Done (8.086s)! For help, type "help"
+> [K[09:15:29 INFO]: Timings Reset
+> [K[09:15:31 INFO]: UUID of player Damos_P is 086b61c4-98a6-4995-a55e-f6ce242b5d14
+> [K[09:15:31 INFO]: [93mDamos_P joined the game[0m
+> [K[09:15:31 INFO]: Damos_P[/110.32.204.8:49343] logged in with entity id 124 at ([Aeron's victim group (World 1)]1246.5234546085776, 68.0, -1132.4682041259318)
+> [K[33;1m[09:15:51 WARN]: Damos_P moved too quickly! 1.9340789998782384,-2.5475485219240284,-12.557067652094474
+[m> 

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Manager</title>
+    <script src="https://kit.fontawesome.com/c7bc5f3d3c.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="styles/styles.css" rel="stylesheet" type="text/css" />
+    <script src="scripts/script.js" defer></script>
+</head>
+    <body>
+        <nav>
+            <h>Minecraft Manger</h>
+            <div class="navButtonWrapper">
+                <button class="start" onclick="startServer()">Start Server</button>
+                <button class="stop" onclick="stopServer()">Stop Server</button>
+                <button class="backup" onclick="backup()">Back-Up Server</button>
+                <button class="files" onclick="loadFilesModal(true)">File Manager</button>
+            </div>
+        </nav>
+        <main>
+            <div id="terminal" class="panel">
+                <div id="terminal-nav" class="panel-nav">
+                    <h>Terminal</h>
+                </div>
+                <div id="command-content" class="container">
+                    <div id="events">Loading</div>
+                </div>
+                <div id="command-wrapper">
+                    <input id="input" placeholder="Send Command" />
+                    <button class="send" onclick="sendCommand()">Send</button>    
+                </div>
+            </div>
+            <div id="option-container" class="panel">
+                <div id="option-nav" class="panel-nav">
+                    <h>Options</h>
+                </div>
+                <div class="option">
+                    <h1>Ram: </h1>
+                    <select name="ram" id="ram">
+                        <option value="1024M">1GB</option>
+                        <option value="2048M">2GB</option>
+                        <option value="4096M">4GB</option>
+                    </select>
+                </div>
+                <div class="option">
+                    <h1>Upload Jar:</h1>
+                    <div>
+                        <input type="file" id="jarFileInput">
+                        <button onclick="uploadFile('jar')" class="upload">Upload</button>
+                    </div>
+                </div>
+                <div class="option">
+                    <h1>Server Jar:</h1>
+                    <div>
+                        <select name="serverJar" id="serverJar"></select>
+                        <button onclick="removeFile('jar')" class="stop">Remove Jar</button>
+                    </div>
+                </div>
+                <div class="option">
+                    <h1>Upload Mod:</h1>
+                    <div>
+                        <input type="file" id="modFileInput">
+                        <button onclick="uploadFile('mod')" class="upload">Upload</button>
+                    </div>
+                </div>
+                <div class="option">
+                    <h1>Remove Mods:</h1>
+                    <div>
+                        <select name="mods" id="mods"></select>
+                        <button onclick="removeFile('mod')" class="stop">Remove Mod</button>
+                    </div>
+                </div>
+                <div class="option">
+                    <h1>Upload Plugin:</h1>
+                    <div>
+                        <input type="file" id="pluginFileInput">
+                        <button onclick="uploadFile('plugin')" class="upload">Upload</button>
+                    </div>
+                </div>
+                <div class="option">
+                    <h1>Remove Plugin:</h1>
+                    <div>
+                        <select name="plugins" id="plugins"></select>
+                        <button onclick="removeFile('plugin')" class="stop">Remove Plugin</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div id="overlay"></div>
+        <div class="modal" id="filesModal">
+            <nav>
+                <h>File Manager</h>
+                <div class="navButtonWrapper">
+                    <button class="stop" onclick="loadFilesModal(false)">Close</button>
+                </div>
+            </nav>
+            <div class="banner">
+                <div class="sortCat">
+                    <h1>Name</h1>
+                </div>
+                <div class="sortCat">
+                    <h1>Date Modified</h1>
+                </div>
+                <div class="sortCat">
+                    <h1>File Type</h1>
+                </div>
+                <div class="sortCat">
+                    <h1>Size</h1>
+                </div>
+            </div>
+            <div id="files">
+                <h>Loading...</h>
+            </div>
+            
+        </div>
+    </body>
+</html>

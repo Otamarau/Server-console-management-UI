@@ -1,0 +1,394 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    h {
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 25px;
+        margin-left: 10px;
+    }
+    nav {
+        width: 100%;
+        height: 70px;
+        background-color: #14140F;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        .navButtonWrapper {
+            margin-right: 10px;
+            width: 400px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            button {
+                color: white;
+                height: 40px;
+                width: 90px;
+                border-radius: 10px;
+                outline: none;
+                border: none;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        }
+    }
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .panel {
+            width: 48vw;
+            height: 70vh;
+            border-radius: 15px;
+            background-color: #14140F;
+            border: 3px solid gray;
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            overflow: hidden;
+            // Navigation style common to both terminal and option container hi
+            .panel-nav {
+                background-color: darken($color: #14140F, $amount: 2);
+                width: 100%;
+                height: 70px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        
+            #command-content {
+                overflow-y: scroll;
+                overflow-x: hidden; 
+                width: 99%;
+                height: 80%;
+                background-color: #14140F;
+                color: white;
+                scroll-snap-type: y mandatory;
+                .row {
+                    font-family: Arial, Helvetica, sans-serif;
+                    scroll-snap-align: end none;
+                    height: fit-content;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                
+                    .stamp {
+                      white-space: nowrap;
+                      color: green;
+                      width: fit-content;
+                    }
+                }
+        
+                .row:hover {
+                    background-color: lighten($color: #14140F, $amount: 10);
+                }
+                &::after {
+                    content: "";
+                    display: block;
+                    scroll-snap-align: end;
+                }
+                /* Hide the scroll bar */
+                &::-webkit-scrollbar {
+                    width: 0.5em;
+                    background-color: #14140F;
+                }
+        
+                &::-webkit-scrollbar-thumb {
+                    background-color: #888;
+                }
+            }
+        
+            #command-wrapper {
+                background-color: darken($color: #14140F, $amount: 2);
+                width: 100%;
+                height: 60px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                input {
+                    width: 60%;
+                    height: 40px;
+                    border-top-left-radius: 10px;
+                    border-bottom-left-radius: 10px;
+                    border: none;
+                    outline: none;
+                }
+                button {
+                    width: 80px;
+                    height: 42px;
+                    border: none;
+                    color: white;
+                    background-color: #44803F;
+                    border-top-right-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                    &:hover {
+                        background-color: darken($color: #44803F, $amount: 10);
+                    }
+                }
+            }
+        
+            .option {
+                // background-color: green;
+                align-items: center;
+                width: 95%;
+                display: flex;
+                justify-content: space-between;
+                color: white;
+                button {
+                    color: white;
+                    height: 40px;
+                    width: 90px;
+                    border-radius: 10px;
+                    outline: none;
+                    border: none;
+                }
+                select {
+                    height: 40px;
+                    border-radius: 10px;
+                    border: none;
+                }
+                div {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 50%;
+                }
+                h1 {
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 20px
+                }
+                &:hover {
+                    background-color: lighten($color: #14140F, $amount: 10);
+                }
+            }
+        }
+            
+    }
+    #overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); 
+        z-index: 1; 
+        display: none;
+    }
+    .modal {
+        position: fixed;
+        z-index: 2;
+        left: 50%;
+        top: 50%;
+        width: 90%;
+        height: 90%;
+        background-color: #191919;
+        overflow: auto;
+        transform: translate(-50%, -50%);
+        border-radius: 15px;
+        border: 3px solid gray;
+        display: none;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        h1 {
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 16px;
+        }
+        nav {
+            width: 100%;
+            height: 250px;
+            background-color: darken($color: #191919, $amount: 2);
+            .navButtonWrapper {
+                margin-right: 0px;
+                justify-content: center;
+                width: 110px;
+            }
+        }
+        .banner {
+            width: 100%;
+            height: 50px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            .sortCat {
+                width: 20%;
+                height: auto;
+                background-color: #191919;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-right: white 1px solid;
+                cursor: pointer;
+                user-select: none;
+                &:hover {
+                    background-color: lighten($color: #191919, $amount: 2);
+                    h1 {
+                        color: darken($color: #ffff, $amount: 2);
+                    }
+                }
+            }
+        }
+        #files {
+            width: 100%;
+            height: auto;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            .row {
+                display: flex;
+                width: 100%;
+                height: fit-content;
+                justify-content: flex-start;
+                align-items: center;
+                border: #191919 1px solid;
+                
+                &:hover {
+                    background-color: lighten($color: #191919, $amount: 2);
+                    h1 {
+                        color: darken($color: #ffff, $amount: 2);
+                    }
+                }
+                .fileInfo {
+                    width: 20%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    border-right: #191919 1px solid;
+                    cursor: pointer;
+
+                    h1 {
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 14px;
+                        margin-left: 10px;
+                    }
+                }                
+            }
+            &::after {
+                content: "";
+                display: block;
+                scroll-snap-align: end;
+            }
+            /* Hide the scroll bar */
+            &::-webkit-scrollbar {
+                width: 0.5em;
+                background-color: #14140F;
+            }
+    
+            &::-webkit-scrollbar-thumb {
+                background-color: #888;
+            }
+
+        }
+
+    }
+
+}
+        
+
+button:hover {
+    cursor: pointer;
+}
+
+.start {
+    background-color: #44803F;
+    &:hover {
+        background-color: darken($color: #44803F, $amount: 10);
+    }
+}
+.stop {
+    background-color: #F26800;
+    &:hover {
+        background-color: darken($color: #F26800, $amount: 10);
+    }
+}
+.backup {
+    background-color: #184C78;
+    &:hover {
+        background-color: darken($color: #184C78, $amount: 10);
+    }
+}
+.files {
+    background-color: #D9A045;
+    &:hover {
+        background-color: darken($color: #D9A045, $amount: 10);
+    }
+}
+
+
+// @media (min-width: 1367px) {
+
+// }
+  
+@media (max-width: 800px) {
+    nav {
+        height: 70px !important; 
+        flex-direction: column !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h {
+            display: none !important;
+        }
+
+        .navButtonWrapper {
+            width: 100% !important;
+            height: 100%;
+            margin-right: 0 !important;
+            display: flex;
+            justify-content: center !important;
+            align-items: center;
+            justify-content: space-around !important;
+            button {
+                width: 100px !important;
+            }
+        }
+    }
+
+    main {
+        flex-direction: column !important;
+
+        #option-container {
+            display: none !important;
+        }
+
+        .panel {
+            width: 90vw !important;
+            height: 85vh !important;
+            margin: 10px auto !important;
+
+            #command-content, #command-wrapper, .option {
+                width: 95% !important;
+                .stamp {
+                    display: none !important;
+                }
+            }
+
+            #command-wrapper input, #command-wrapper {
+                button {
+                    width: 100px !important;
+                }
+                input {
+                    width: 200px !important;
+                }
+
+            }
+        }
+    }
+}
+
+
+
+// You can also place the hover styles inside the media query if you want to disable hover effects on touch devices
+@media (hover: hover) {
+    button:hover {
+        cursor: pointer;
+        // ... other hover styles ...
+    }
+}
